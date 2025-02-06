@@ -1,0 +1,7 @@
+@utility js-open-view-contact-mobile {
+  @apply right-0;
+}
+
+@utility js-close-view-contact-mobile {
+  @apply right-[-100%];
+}

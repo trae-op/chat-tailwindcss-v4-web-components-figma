@@ -1,0 +1,23 @@
+@utility font-family-sf-pro-regular {
+  @apply font-normal font-family-sf-pro;
+}
+
+@utility font-family-sf-pro-medium {
+  @apply font-medium font-family-sf-pro;
+}
+
+@utility font-family-sf-pro-light {
+  @apply font-light font-family-sf-pro;
+}
+
+@utility font-family-sf-ui-bold {
+  @apply font-bold font-family-sf-ui;
+}
+
+@utility font-family-sf-ui-bold-regular {
+  @apply font-normal font-family-sf-ui;
+}
+
+@utility font-family-js-bold {
+  @apply font-bold font-family-js;
+}

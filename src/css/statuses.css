@@ -1,0 +1,47 @@
+@utility js-show-pinned {
+  .js-pinned {
+    @apply block;
+  }
+}
+
+@utility js-show-read {
+  .js-read {
+    @apply block;
+  }
+
+  .js-default-read {
+    @apply hidden;
+  }
+}
+
+@utility js-show-unread {
+  .js-you-send,
+  .js-read {
+    @apply hidden;
+  }
+
+  .js-unread {
+    @apply flex justify-center;
+  }
+
+  .js-message-unread {
+    @apply text-black/85;
+  }
+}
+
+@utility js-show-send {
+  .js-read {
+    @apply hidden;
+  }
+
+  .js-send,
+  .js-message-send {
+    @apply block;
+  }
+}
+
+@utility js-show-online {
+  .js-online {
+    @apply after:block relative after:right-0 after:bottom-0 after:z-1 after:absolute after:content-[''] after:border-1 after:border-white after:bg-custom-green after:rounded-full after:w-2 after:h-2;
+  }
+}

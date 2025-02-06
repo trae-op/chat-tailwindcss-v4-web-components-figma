@@ -1,0 +1,14 @@
+@theme {
+  --font-family-sf-pro: "SF Pro Display", "sans-serif";
+  --font-family-sf-ui: "SF UI Text", "sans-serif";
+  --font-family-js: "Josefin Sans", "sans-serif";
+  --color-custom-blue: #2d9cdb;
+  --color-custom-green: #27ae60;
+  --color-custom-gray: #cccccc;
+  --color-custom-light-gray: #eeeeee;
+  --color-custom-super-light-gray: #f4f4f7;
+}
+
+button {
+  @apply cursor-pointer;
+}

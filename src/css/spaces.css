@@ -1,0 +1,43 @@
+@utility convert-space-y-* {
+  @apply space-y-[calc(--value(integer)/16*1rem)];
+}
+
+@utility convert-space-x-* {
+  @apply space-x-[calc(--value(integer)/16*1rem)];
+}
+
+@utility convert-px-* {
+  @apply px-[calc(--value(integer)/16*1rem)];
+}
+
+@utility convert-py-* {
+  @apply py-[calc(--value(integer)/16*1rem)];
+}
+
+@utility convert-p-* {
+  @apply p-[calc(--value(integer)/16*1rem)];
+}
+
+@utility convert-pt-* {
+  @apply pt-[calc(--value(integer)/16*1rem)];
+}
+
+@utility convert-w-* {
+  @apply w-[calc(--value(integer)/16*1rem)];
+}
+
+@utility convert-h-* {
+  @apply h-[calc(--value(integer)/16*1rem)];
+}
+
+@utility convert-wh-* {
+  @apply size-[calc(--value(integer)/16*1rem)];
+}
+
+@utility convert-my-* {
+  @apply my-[calc(--value(integer)/16*1rem)];
+}
+
+@utility convert-fs-* {
+  @apply text-[calc(--value(integer)/16*1rem)];
+}

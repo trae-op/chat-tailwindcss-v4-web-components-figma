@@ -1,0 +1,25 @@
+@utility js-close-dropdown-sidebar {
+  @apply left-[-100%];
+}
+
+@utility js-open-dropdown-sidebar {
+  @apply left-0;
+}
+
+@utility js-hide-background-sidebar {
+  @apply opacity-0;
+}
+
+@utility js-show-background-sidebar {
+  @apply opacity-100;
+}
+
+@utility active {
+  @apply bg-custom-green;
+}
+
+@utility is-active {
+  & > span:first-child {
+    @apply active;
+  }
+}

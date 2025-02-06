@@ -1,0 +1,11 @@
+.scrollbar::-webkit-scrollbar {
+  @apply w-1;
+}
+
+.scrollbar::-webkit-scrollbar-thumb {
+  @apply bg-custom-gray;
+}
+
+.scrollbar::-webkit-scrollbar-track {
+  @apply bg-custom-light-gray;
+}
