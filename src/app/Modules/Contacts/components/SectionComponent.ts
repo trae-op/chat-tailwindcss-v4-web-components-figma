@@ -1,6 +1,7 @@
-import { html, TailwindcssConnection } from "../../../shared/utils";
+import { TailwindCssConnectionModule } from "../../../Shared/Modules/TailwindCssConnection";
+import { html } from "../../../Shared/utils";
 
-class ContactsSection extends TailwindcssConnection {
+export class SectionComponent extends TailwindCssConnectionModule {
   constructor() {
     super();
   }
@@ -439,5 +440,3 @@ class ContactsSection extends TailwindcssConnection {
     );
   }
 }
-
-customElements.define("contacts-section-component", ContactsSection);

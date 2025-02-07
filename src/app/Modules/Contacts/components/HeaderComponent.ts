@@ -1,6 +1,7 @@
-import { html, TailwindcssConnection } from "../../../shared/utils";
+import { TailwindCssConnectionModule } from "../../../Shared/Modules/TailwindCssConnection";
+import { html } from "../../../Shared/utils";
 
-class ContactsHeader extends TailwindcssConnection {
+export class HeaderComponent extends TailwindCssConnectionModule {
   constructor() {
     super();
   }
@@ -16,7 +17,21 @@ class ContactsHeader extends TailwindcssConnection {
           <div class="flex items-center space-x-2">
             <!-- button open sidebar component -->
             <button type="button" id="js-open-sidebar">
-              <svg-menu-component></svg-menu-component>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <line x1="4" x2="20" y1="12" y2="12" />
+                <line x1="4" x2="20" y1="6" y2="6" />
+                <line x1="4" x2="20" y1="18" y2="18" />
+              </svg>
             </button>
             <!-- title component -->
             <h1 class="font-family-sf-ui-bold text-2xl/4 text-black">
@@ -79,5 +94,3 @@ class ContactsHeader extends TailwindcssConnection {
     );
   }
 }
-
-customElements.define("contacts-header-component", ContactsHeader);

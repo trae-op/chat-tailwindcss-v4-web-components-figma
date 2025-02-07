@@ -1,10 +1,14 @@
-import "./features/Contacts";
-import "./shared/components";
+import { ContactsModule } from "./app/Modules/Contacts";
+import { DropdownSidebarModule } from "./app/Modules/DropdownSidebar";
+import { RegisterModule } from "./app/Shared/Modules/Register";
+import { AppModule } from "./app/AppModule";
 
-import { html } from "./shared/utils";
+const registerModules = new RegisterModule();
 
-document.querySelector<HTMLDivElement>("#app")!.innerHTML = html`
-  <div class="w-full h-screen overflow-hidden">
-    <contacts-component></contacts-component>
-  </div>
-`;
+registerModules
+  .importModules([
+    new DropdownSidebarModule(),
+    new ContactsModule(),
+    new AppModule(),
+  ])
+  .bootstrap();

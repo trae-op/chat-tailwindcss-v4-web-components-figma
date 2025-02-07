@@ -3,6 +3,7 @@
 Open your terminal in (windows/mac/linux) and run this commands:
 
 ```bash
+npm create vite@latest my-web-components-project
 yarn init -y
 yarn add typescript lite-server -D
 npx tsc --init

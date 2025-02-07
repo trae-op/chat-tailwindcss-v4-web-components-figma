@@ -1,7 +1,7 @@
-import { getEnvironment } from "./environment";
-import { html } from "./template-strings";
+import { getEnvironment } from "../../utils/environment";
+import { html } from "../../utils/template-strings";
 
-export class TailwindcssConnection extends HTMLElement {
+export class TailwindCssConnectionModule extends HTMLElement {
   constructor() {
     super();
     this.attachShadow({ mode: "open" });

@@ -1,6 +1,7 @@
-import { html, TailwindcssConnection } from "../../../shared/utils";
+import { TailwindCssConnectionModule } from "../../Modules/TailwindCssConnection";
+import { html } from "../../utils";
 
-class SvgMenu extends TailwindcssConnection {
+class SvgMenu extends TailwindCssConnectionModule {
   constructor() {
     super();
   }
