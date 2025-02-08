@@ -1,30 +1,33 @@
-import { RegisterModule } from "../../Shared/Modules/Register";
+import { Module as RegisterModule } from "../../Shared/Modules/Register";
 import type {
   TAdditionalService,
   TComponent,
 } from "../../Shared/Modules/Register/types";
 import {
-  ContactsComponent,
+  ContainerComponent,
   HeaderComponent,
   SectionComponent,
+  FooterComponent,
 } from "./components";
 import type { TNameComponents } from "./types";
 
-export class ContactsModule<
-  NC extends TNameComponents
-> extends RegisterModule<NC> {
+export class Module<NC extends TNameComponents> extends RegisterModule<NC> {
   private defaultComponents: TComponent<NC>[] = [
     {
-      name: "contacts-component" as NC,
-      componentClass: ContactsComponent,
+      name: "view-contact-container-component" as NC,
+      componentClass: ContainerComponent,
     },
     {
-      name: "contacts-header-component" as NC,
+      name: "view-contact-header-component" as NC,
       componentClass: HeaderComponent,
     },
     {
-      name: "contacts-section-component" as NC,
+      name: "view-contact-section-component" as NC,
       componentClass: SectionComponent,
+    },
+    {
+      name: "view-contact-footer-component" as NC,
+      componentClass: FooterComponent,
     },
   ];
 

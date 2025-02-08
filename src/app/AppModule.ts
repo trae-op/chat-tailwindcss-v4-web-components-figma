@@ -1,4 +1,4 @@
-import { RegisterModule } from "./Shared/Modules/Register";
+import { Module as RegisterModule } from "./Shared/Modules/Register";
 import { AppComponent } from "./AppComponent";
 
 type TNameComponents = "app-component";

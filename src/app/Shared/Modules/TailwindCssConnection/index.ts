@@ -1,1 +1,1 @@
-export * from "./TailwindCssConnectionModule";
+export * from "./Module";

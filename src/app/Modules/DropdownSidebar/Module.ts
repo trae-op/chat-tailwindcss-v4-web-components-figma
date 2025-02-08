@@ -1,4 +1,4 @@
-import { RegisterModule } from "../../Shared/Modules/Register";
+import { Module as RegisterModule } from "../../Shared/Modules/Register";
 import type {
   TAdditionalService,
   TComponent,
@@ -6,9 +6,7 @@ import type {
 import { ButtonComponent, MenuComponent } from "./components";
 import type { TNameComponents } from "./types";
 
-export class DropdownSidebarModule<
-  NC extends TNameComponents
-> extends RegisterModule<NC> {
+export class Module<NC extends TNameComponents> extends RegisterModule<NC> {
   private defaultComponents: TComponent<NC>[] = [
     {
       name: "button-dropdown-component" as NC,

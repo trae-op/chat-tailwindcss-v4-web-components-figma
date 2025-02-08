@@ -1,4 +1,4 @@
 export type TNameComponents =
-  | "contacts-component"
+  | "contacts-container-component"
   | "contacts-header-component"
   | "contacts-section-component";

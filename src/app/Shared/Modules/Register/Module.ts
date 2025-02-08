@@ -1,8 +1,8 @@
 import type { TAdditionalService, TComponent } from "./types";
 
-export class RegisterModule<NC extends string> {
+export class Module<NC extends string> {
   private components: Map<NC, CustomElementConstructor> = new Map();
-  private modules: RegisterModule<NC>[] = [];
+  private modules: Module<NC>[] = [];
 
   additionalServices<NC>(
     defaultComponents: TComponent<NC>[],
@@ -52,7 +52,7 @@ export class RegisterModule<NC extends string> {
     });
   }
 
-  importModules(moduleInstances: RegisterModule<NC>[]): RegisterModule<NC> {
+  importModules(moduleInstances: Module<NC>[]): Module<NC> {
     moduleInstances.forEach((moduleInstance) => {
       if (!this.modules.includes(moduleInstance)) {
         this.modules.push(moduleInstance);

@@ -1,4 +1,4 @@
-import { TailwindCssConnectionModule } from "../../../Shared/Modules/TailwindCssConnection";
+import { Module as TailwindCssConnectionModule } from "../../../Shared/Modules/TailwindCssConnection";
 import { html } from "../../../Shared/utils";
 
 export class SectionComponent extends TailwindCssConnectionModule {

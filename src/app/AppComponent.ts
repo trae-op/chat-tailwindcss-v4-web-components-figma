@@ -14,7 +14,8 @@ export class AppComponent extends HTMLElement {
     if (this.shadowRoot !== null) {
       this.shadowRoot.innerHTML = html`
         <div class="w-full h-screen overflow-hidden">
-          <contacts-component></contacts-component>
+          <contacts-container-component></contacts-container-component>
+          <view-contact-container-component></view-contact-container-component>
         </div>
       `;
     }

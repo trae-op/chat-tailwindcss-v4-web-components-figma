@@ -1,1 +1,1 @@
-export * from "./RegisterModule";
+export * from "./Module";

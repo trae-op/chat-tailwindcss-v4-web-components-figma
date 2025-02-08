@@ -1,7 +1,7 @@
-import { TailwindCssConnectionModule } from "../../../Shared/Modules/TailwindCssConnection";
+import { Module as TailwindCssConnectionModule } from "../../../Shared/Modules/TailwindCssConnection";
 import { html } from "../../../Shared/utils";
 
-export class ContactsComponent extends TailwindCssConnectionModule {
+export class ContainerComponent extends TailwindCssConnectionModule {
   constructor() {
     super();
   }

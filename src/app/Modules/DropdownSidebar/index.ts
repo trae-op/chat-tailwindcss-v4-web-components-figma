@@ -1,1 +1,1 @@
-export * from "./DropdownSidebarModule";
+export * from "./Module";
