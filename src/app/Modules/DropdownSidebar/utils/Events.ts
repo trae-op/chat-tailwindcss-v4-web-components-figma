@@ -86,14 +86,12 @@ export class Events extends TailwindCssConnectionModule {
         );
       }
 
-      if (element.background !== null) {
+      if (element.dropdown !== null && element.background !== null) {
         element.background.addEventListener(
           "click",
           this.handleBackgroundSidebar.bind(this)
         );
-      }
 
-      if (element.dropdown !== null && element.background !== null) {
         element.dropdown.addEventListener(
           "transitionend",
           this.handleDropdownTransitionend.bind(this)
