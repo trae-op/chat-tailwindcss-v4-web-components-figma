@@ -1,5 +1,5 @@
 @utility js-close-dropdown-sidebar {
-  @apply left-[-100%];
+  @apply left-[-200px];
 }
 
 @utility js-open-dropdown-sidebar {

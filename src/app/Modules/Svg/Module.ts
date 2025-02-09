@@ -9,7 +9,7 @@ import type { TNameComponents } from "./types";
 export class Module<NC extends TNameComponents> extends RegisterModule<NC> {
   private defaultComponents: TComponent<NC>[] = [
     {
-      name: "menu-dropdown-component" as NC,
+      name: "svg-menu-component" as NC,
       componentClass: MenuComponent,
     },
   ];

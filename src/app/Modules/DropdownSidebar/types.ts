@@ -1,3 +1,1 @@
-export type TNameComponents =
-  | "button-dropdown-component"
-  | "menu-dropdown-component";
+export type TNameComponents = "menu-dropdown-component";

@@ -1,7 +1,7 @@
-import { TailwindCssConnectionModule } from "../../Modules/TailwindCssConnection";
-import { html } from "../../utils";
+import { Module as TailwindCssConnectionModule } from "../../../Shared/Modules/TailwindCssConnection";
+import { html } from "../../../Shared/utils";
 
-class SvgMenu extends TailwindCssConnectionModule {
+export class MenuComponent extends TailwindCssConnectionModule {
   constructor() {
     super();
   }
@@ -32,5 +32,3 @@ class SvgMenu extends TailwindCssConnectionModule {
     );
   }
 }
-
-customElements.define("svg-menu-component", SvgMenu);
