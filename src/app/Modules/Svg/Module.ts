@@ -3,7 +3,7 @@ import type {
   TAdditionalService,
   TComponent,
 } from "../../Shared/Modules/Register/types";
-import { MenuComponent } from "./components";
+import { MenuComponent, PrevArrowComponent } from "./components";
 import type { TNameComponents } from "./types";
 
 export class Module<NC extends TNameComponents> extends RegisterModule<NC> {
@@ -11,6 +11,10 @@ export class Module<NC extends TNameComponents> extends RegisterModule<NC> {
     {
       name: "svg-menu-component" as NC,
       componentClass: MenuComponent,
+    },
+    {
+      name: "svg-prev-arrow-component" as NC,
+      componentClass: PrevArrowComponent,
     },
   ];
 

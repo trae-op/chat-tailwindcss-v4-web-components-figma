@@ -9,6 +9,7 @@ import {
   SectionComponent,
 } from "./components";
 import type { TNameComponents } from "./types";
+import { StateService } from "./Services";
 
 export class Module<NC extends TNameComponents> extends RegisterModule<NC> {
   private defaultComponents: TComponent<NC>[] = [
@@ -23,6 +24,7 @@ export class Module<NC extends TNameComponents> extends RegisterModule<NC> {
     {
       name: "contacts-section-component" as NC,
       componentClass: SectionComponent,
+      services: [new StateService()],
     },
   ];
 

@@ -1,7 +1,7 @@
 import { html } from "../../../Shared/utils";
-import { Events } from "../utils";
+import { Module as EventsModule } from "../Events";
 
-export class MenuComponent extends Events {
+export class MenuComponent extends EventsModule {
   constructor() {
     super();
   }
@@ -14,12 +14,16 @@ export class MenuComponent extends Events {
   private render() {
     this.setRender(
       html`
-        <button type="button" id="js-button-open-sidebar">
+        <button
+          type="button"
+          id="${this.customClassesElements.buttonOpenSidebar}"
+        >
           <svg-menu-component></svg-menu-component>
         </button>
         <div
-          id="js-menu-dropdown"
-          class="top-0 z-10 fixed w-[200px] bg-white convert-px-11 h-screen duration-200 ease-in-out js-close-dropdown-sidebar"
+          id="${this.customClassesElements.menuDropdown}"
+          class="top-0 z-10 fixed w-[200px] bg-white convert-px-11 h-screen duration-200 ease-in-out ${this
+            .customClassesElements.closeDropdownSidebar}"
         >
           <header class="convert-space-y-27 convert-py-27 w-full">
             <div class="flex justify-center w-full">
@@ -242,8 +246,9 @@ export class MenuComponent extends Events {
           </footer>
         </div>
         <div
-          id="js-background-sidebar"
-          class="hidden top-0 z-0 fixed bg-black/50 w-full h-screen duration-200 ease-in-out js-hide-background-sidebar"
+          id="${this.customClassesElements.backgroundSidebar}"
+          class="hidden top-0 z-0 fixed bg-black/50 w-full h-screen duration-200 ease-in-out ${this
+            .customClassesElements.hideBackgroundSidebar}"
         ></div>
       `
     );

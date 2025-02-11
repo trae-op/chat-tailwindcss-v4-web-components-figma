@@ -1,13 +1,31 @@
-import { Module as TailwindCssConnectionModule } from "../../../Shared/Modules/TailwindCssConnection";
+import { Module as EventsModule } from "../Events";
 import { html } from "../../../Shared/utils";
+import { StateService } from "../Services";
 
-export class HeaderComponent extends TailwindCssConnectionModule {
-  constructor() {
+export class HeaderComponent extends EventsModule {
+  constructor(private stateService: StateService) {
     super();
   }
 
   connectedCallback() {
     this.render();
+
+    const element = this.getElement();
+
+    if (element !== null) {
+      if (element.button !== null) {
+        element.button.addEventListener(
+          "click",
+          this.handleCloseViewContact.bind(this)
+        );
+      }
+    }
+  }
+
+  handleCloseViewContact() {
+    this.stateService.setState({
+      isCloseViewContact: true,
+    });
   }
 
   render() {
@@ -19,20 +37,7 @@ export class HeaderComponent extends TailwindCssConnectionModule {
           <div class="flex items-center space-x-2">
             <!-- button prev arrow component -->
             <button id="js-close-view-contact" type="button" class="text-black">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="2"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              >
-                <path d="m12 19-7-7 7-7" />
-                <path d="M19 12H5" />
-              </svg>
+              <svg-prev-arrow-component></svg-prev-arrow-component>
             </button>
             <!-- avatar component -->
             <div class="flex overflow-hidden">

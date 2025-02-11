@@ -1,13 +1,31 @@
 import { Module as TailwindCssConnectionModule } from "../../../Shared/Modules/TailwindCssConnection";
 import { html } from "../../../Shared/utils";
+import { StateService } from "../Services";
 
 export class SectionComponent extends TailwindCssConnectionModule {
-  constructor() {
+  constructor(private stateService: StateService) {
     super();
   }
 
   connectedCallback() {
     this.render();
+    this.addEventsListener();
+  }
+
+  private handleContact() {
+    this.stateService.setState({
+      userId: 1,
+    });
+  }
+
+  addEventsListener() {
+    const shadow = this.shadowRoot;
+    const contact =
+      shadow != null ? shadow.getElementById("js-contact-id-1") : null;
+
+    if (contact !== null) {
+      contact.addEventListener("click", this.handleContact.bind(this));
+    }
   }
 
   render() {
@@ -18,6 +36,7 @@ export class SectionComponent extends TailwindCssConnectionModule {
         >
           <!-- contact component -->
           <div
+            id="js-contact-id-1"
             class="flex hover:bg-custom-light-gray convert-px-21 py-2 js-show-online js-show-pinned cursor-pointer"
           >
             <div class="flex items-center space-x-3">

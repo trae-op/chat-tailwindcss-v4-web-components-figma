@@ -9,6 +9,7 @@ import {
   SectionComponent,
   FooterComponent,
 } from "./components";
+import { StateService } from "./Services";
 import type { TNameComponents } from "./types";
 
 export class Module<NC extends TNameComponents> extends RegisterModule<NC> {
@@ -16,10 +17,12 @@ export class Module<NC extends TNameComponents> extends RegisterModule<NC> {
     {
       name: "view-contact-container-component" as NC,
       componentClass: ContainerComponent,
+      services: [new StateService()],
     },
     {
       name: "view-contact-header-component" as NC,
       componentClass: HeaderComponent,
+      services: [new StateService()],
     },
     {
       name: "view-contact-section-component" as NC,

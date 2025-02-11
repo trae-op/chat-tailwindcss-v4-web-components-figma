@@ -1,0 +1,126 @@
+{
+  "pinned": {
+    "4": "true",
+    "6": "true",
+    "7": "true"
+  },
+  "statuses": {
+    "5": "true",
+    "3": "true",
+    "10": "true"
+  },
+  "read": {
+    "2": "true"
+  },
+  "send": {
+    "8": "true"
+  },
+  "users": [
+    {
+      "id": 1,
+      "name": "John Wick",
+      "createdAt": "2025-02-10T12:30:45.000Z",
+      "avatar": "https://s.cafebazaar.ir/images/icons/co.ad.johnwick-9474a0fc-af1b-442a-ae53-3e38ca18e256_512x512.png?x-img=v1/resize,h_256,w_256,lossless_false/optimize"
+    },
+    {
+      "id": 2,
+      "name": "John Doe2",
+      "createdAt": "2025-02-10T12:30:45.000Z",
+      "avatar": "https://images.unsplash.com/photo-1491528323818-fdd1faba62cc?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
+    },
+    {
+      "id": 3,
+      "name": "John Doe3",
+      "createdAt": "2025-02-10T12:30:45.000Z",
+      "avatar": "https://images.unsplash.com/photo-1491528323818-fdd1faba62cc?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
+    },
+    {
+      "id": 4,
+      "name": "John Doe4",
+      "createdAt": "2025-02-10T12:30:45.000Z",
+      "avatar": "https://images.unsplash.com/photo-1491528323818-fdd1faba62cc?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
+    },
+    {
+      "id": 5,
+      "name": "John Doe5",
+      "createdAt": "2025-02-10T12:30:45.000Z",
+      "avatar": "https://images.unsplash.com/photo-1491528323818-fdd1faba62cc?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
+    },
+    {
+      "id": 6,
+      "name": "John Doe6",
+      "createdAt": "2025-02-10T12:30:45.000Z",
+      "avatar": "https://images.unsplash.com/photo-1491528323818-fdd1faba62cc?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
+    },
+    {
+      "id": 7,
+      "name": "John Doe7",
+      "createdAt": "2025-02-10T12:30:45.000Z",
+      "avatar": "https://images.unsplash.com/photo-1491528323818-fdd1faba62cc?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
+    },
+    {
+      "id": 8,
+      "name": "John Doe8",
+      "createdAt": "2025-02-10T12:30:45.000Z",
+      "avatar": "https://images.unsplash.com/photo-1491528323818-fdd1faba62cc?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
+    },
+    {
+      "id": 9,
+      "name": "John Doe9",
+      "createdAt": "2025-02-10T12:30:45.000Z",
+      "avatar": "https://images.unsplash.com/photo-1491528323818-fdd1faba62cc?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
+    },
+    {
+      "id": 10,
+      "name": "John Doe10",
+      "createdAt": "2025-02-10T12:30:45.000Z",
+      "avatar": "https://images.unsplash.com/photo-1491528323818-fdd1faba62cc?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
+    },
+    {
+      "id": 11,
+      "name": "John Doe11",
+      "createdAt": "2025-02-10T12:30:45.000Z",
+      "avatar": "https://images.unsplash.com/photo-1491528323818-fdd1faba62cc?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
+    },
+    {
+      "id": 12,
+      "name": "John Doe12",
+      "createdAt": "2025-02-10T12:30:45.000Z",
+      "avatar": "https://images.unsplash.com/photo-1491528323818-fdd1faba62cc?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
+    }
+  ],
+  "messages": [
+    {
+      "id": 123,
+      "userId": 2,
+      "chatId": 8,
+      "message": "what are you doing today?"
+    },
+    { "id": 1235, "userId": 2, "chatId": 8, "message": "Ah thats nice" },
+    { "id": 12355, "userId": 8, "chatId": 2, "message": "Where are you from?" },
+    {
+      "id": 12554,
+      "userId": 8,
+      "chatId": 2,
+      "message": "okey, that will be great"
+    },
+    {
+      "id": 554332,
+      "userId": 1,
+      "chatId": 2,
+      "message": "I am learning english and i need practice"
+    },
+    { "id": 554332, "userId": 8, "chatId": 2, "message": "I have an idea!" },
+    {
+      "id": 88843348,
+      "userId": 1,
+      "chatId": 2,
+      "message": "Actually, I don't use speaky much but if you like I can share my whatsapp and we can continue conversation there easily."
+    },
+    { "id": 433, "userId": 1, "message": "Maybe do you help me?" }
+  ],
+  "chats": {
+    "1": [2, 1],
+    "2": [8, 1]
+  }
+}
