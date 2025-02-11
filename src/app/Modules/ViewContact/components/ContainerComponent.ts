@@ -34,7 +34,7 @@ export class ContainerComponent extends EventsModule {
     });
   }
 
-  render() {
+  private render() {
     this.setRender(
       html`
         <div
@@ -42,7 +42,9 @@ export class ContainerComponent extends EventsModule {
           class="top-0 z-10 absolute flex flex-col bg-white js-close-view-contact-mobile w-full h-screen duration-200 ease-in-out"
         >
           <view-contact-header-component></view-contact-header-component>
-          <view-contact-section-component></view-contact-section-component>
+          <view-contact-section-component
+            class="overflow-hidden"
+          ></view-contact-section-component>
           <view-contact-footer-component></view-contact-footer-component>
         </div>
       `
